@@ -1,8 +1,27 @@
+.sign-box{
+	width: 700px;
+    margin: 0 auto;
+}
+.main-title{
+	color: #fff;
+	background: #3f89ec;
+	padding: 5px;
+	margin: 0;
+	text-align: center;;;
+}
+.sign-title{
+	font-size: 20px;
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 8px;
+	color: #666;
+	margin-bottom: 13px;
+	font-weight: normal;
+}
 .pass-form-item{
 	height: 42px;
 	clear: both;
 	zoom: 1;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	position: relative;
 }
 .pass-label{
