@@ -1,0 +1,129 @@
+.pass-form-item{
+	height: 42px;
+	clear: both;
+	zoom: 1;
+	margin-bottom: 20px;
+	position: relative;
+}
+.pass-label{
+	display: block;	
+	float: left;
+	font-weight: 700;
+	color: #666;
+	font-size: 14px;
+	width: 76px;
+	height: 40px;
+	line-height: 40px;
+	text-align: right;
+	margin-right: 10px
+
+}
+.pass-label .txt-red{
+	color: red;
+}
+.pass-input{
+	display: block;
+	float: left;
+	height: 16px;
+	width: 300px;
+	padding: 10px;
+	margin-right: 10px;
+	border:1px solid #ddd;
+	color: #333;
+}
+.pass-input-focus{
+	border-color: #488ee7;
+}
+.pass-input-error{
+	border-color: #fc4343;
+}
+.pass-button{
+	display: block;
+	height: 50px;
+	width: 322px;
+	font-weight: 700;
+	cursor: pointer;
+	font-size: 16px;
+	color: #fff;
+	background: #3f89ec;
+	border:0;
+	position: relative;
+	left: 86px
+}
+input.pass-button,input.pass-input{
+	outline: none;
+}
+.pass-item-succ {
+    display: none;
+    position: relative;
+    float: left;
+    top: 14px;
+    color: #fc4343;
+    height: 16px;
+    line-height: 12px;
+    padding-left: 20px;
+    background: url(../img/reg_icons.png) -80px 0 no-repeat;
+}
+.pass-item-error{
+	display: none;
+	float: left;
+	position: relative;
+	width: 250px;
+	top: 10px;
+	color: #fc4343;
+	height: 16px;
+	line-height: 14px;
+	padding-left: 20px;
+	background: url(../img/reg_icons.png) -80px -23px no-repeat;
+}
+.pass-item-tip{
+	float: left;
+	font-size: 12px;
+	font-family: Arial, simsun;
+	color: #999;
+	position: absolute;
+	left: 418px;
+	padding-top: 5px;
+	display: none;
+}
+
+.pass-item-tip-password{
+	padding-top:0; 
+}
+.pwd-checklist-arrow{
+    font-size: 12px;
+    font-family: Arial,simsun;
+	position: absolute;
+	left:0;
+    top: 8px;
+}
+em.arrowa{
+	font-style: normal;
+	font-size: 20px;
+	position: absolute;
+	left: 0;
+	color: #ddd;
+}
+em.arrowb{
+	font-style: normal;
+	font-size: 20px;
+	position: absolute;
+	left: 1px;
+	color: #f9f9f9;
+}
+.pwd-checklist {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 1px 1px #efefef;
+    background: #f9f9f9;
+    width: 200px;
+    list-style: none;
+    margin: 0 0 0 10px;;
+}
+.pwd-checklist-item{
+	line-height: 20px;
+    padding-left: 18px;
+    background: url(../img/reg_icons.png) no-repeat -86px -112px;
+    color: #666;
+}
