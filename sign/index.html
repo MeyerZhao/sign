@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>注册</title>
+	<link rel="stylesheet" href="css/css.css">
+	<script src="js/jquery.min.js"></script>
+	<script>
+		jQuery(document).ready(function($) {
+			
+				$(".pass-input").focus(function() {
+					if($(this).hasClass('pass-input-error')){					
+						$(this).removeClass('pass-input-error').siblings(".pass-item-error").fadeOut();	
+					}
+					$(this).siblings(".pass-item-succ").fadeOut()
+					$(this).addClass("pass-input-focus").siblings(".pass-item-tip").fadeIn();
+				});
+				$(".pass-input").blur(function() {
+					if($(this).val()!==""){
+						$(this).siblings(".pass-item-succ").fadeIn()
+					}
+					$(this).removeClass("pass-input-focus").siblings(".pass-item-tip").fadeOut();				
+				});
+
+				$(".pass-button").click(function() {					
+					if($("#pass-label-useName").val()==""){
+						$("#pass-label-useName").addClass('pass-input-error').siblings(".pass-item-error").fadeIn()
+					}
+					if($("#pass-label-password").val()==""){
+						$("#pass-label-password").addClass('pass-input-error').siblings(".pass-item-error").fadeIn()
+					}
+					if($("#pass-label-repassword").val()==""){
+						$("#pass-label-repassword").addClass('pass-input-error').siblings(".pass-item-error").fadeIn()
+					}					
+				});
+			
+			
+		});
+	</script>
+	
+</head>
+<body>
+	<form  >
+		<div class="pass-form-item">
+			<label class="pass-label pass-label-useName" ><span class="txt-red">*</span>用户名</label>
+			<input id="pass-label-useName" class="pass-input" type="text" placeholder="请设置用户名">
+			<div class="pass-item-succ">
+				
+			</div>
+			<div class="pass-item-error">
+				请您填写用户名
+			</div>
+			<div class="pass-item-tip" >
+				设置后不可更改<br>中英文均可，最长14个英文或7个汉字
+			</div>
+			
+		</div>
+		<div class="pass-form-item">
+			<label class="pass-label pass-label-password" ><span class="txt-red">*</span>密码</label>
+			<input id="pass-label-password" class="pass-input" type="password" placeholder="请设置登录密码">
+			<div class="pass-item-succ">
+				
+			</div>
+			<div class="pass-item-error">
+				请您填写登录密码
+			</div>
+			<div class="pass-item-tip pass-item-tip-password" >
+				<div class="pwd-checklist-wrapper">
+					<span class="pwd-checklist-arrow"><em class="arrowa">◆</em><em class="arrowb">◆</em></span>
+					<ul class="pwd-checklist">
+						<li class="pwd-checklist-item">长度为6~14个字符</li>
+						<li class="pwd-checklist-item">支持数字,大小写字母和标点符号</li>
+						<li class="pwd-checklist-item">不允许有空格</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pass-form-item">
+			<label class="pass-label pass-label-repassword" ><span class="txt-red">*</span>确认密码</label>
+			<input id="pass-label-repassword" class="pass-input" type="password" placeholder="请再次输入登录密码">
+			<div class="pass-item-succ">
+				
+			</div>
+			<div class="pass-item-error">
+				请再次输入登录密码
+			</div>
+			<div class="pass-item-tip" >
+				请再次输入登录密码
+			</div>
+		</div>
+		<div class="pass-form-item">
+			<input class="pass-button" type="button" value="注册">
+		</div>		
+	</form>
+
+
+</body>
+</html>
